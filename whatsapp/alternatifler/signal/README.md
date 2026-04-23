@@ -29,7 +29,7 @@ gerçek bilinmezlikler dürüstçe aktarılmaktadır.
 
 | Kriter | Değer |
 |---|---|
-| Genel risk skoru | 🟢 2 / 10 |
+| Genel risk skoru | 🟡 3 / 10 |
 | Metadata toplama | 🟢 Minimal |
 | Şeffaflık | 🟢 Açık kaynak, denetlenebilir |
 | Ticari motivasyon | 🟢 Kâr amacı gütmeyen vakıf |
