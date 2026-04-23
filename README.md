@@ -1,25 +1,50 @@
-# Okumadın — Platform Şartları Analizi
+# Okumadın
 
-> "Okudum, kabul ediyorum." Ama ne kabul ettin?
+> "Okudum, kabul ediyorum." — Peki ne kabul ettin?
 
-Bu repo, Türkiye'de yaygın kullanılan dijital platformların hizmet şartları 
-ve gizlilik politikalarının Türkçe analizlerini içerir.
+Türkiye'de yaygın kullanılan dijital platformların hizmet şartlarını,
+gizlilik politikalarını ve çerez politikalarını Türkçe okuyoruz.
+Bulguları kamuoyuyla paylaşıyoruz.
 
-## Amaç
-- Kullanıcıları dijital hakları konusunda bilinçlendirmek
-- KVKK kapsamındaki ihlalleri belgelemek  
-- Yurt dışına çıkan verileri ve olası riskleri şeffaf hale getirmek
-- Yerli ve gizlilik odaklı alternatifleri teşvik etmek
+## Neden bu proje var?
 
-## Metodoloji
-Her analiz tarafların kendi yayımladığı belgeler esas alınarak hazırlanır.
-Tüm tespitler kaynaklara atıfla sunulur.
-Bu analizler bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz.
+Her gün milyonlarca Türk kullanıcı onlarca sayfadan oluşan hukuki
+belgeleri okumadan "kabul ediyorum" tuşuna basıyor. Bu belgeler;
+hangi verilerinizin toplandığını, kiminle paylaşıldığını, hangi
+ülkenin sunucularında işlendiğini ve hangi haklarınızdan vazgeçtiğinizi
+belirliyor.
+
+Bu proje üç amaca hizmet eder:
+
+- Kullanıcıları dijital hakları konusunda bilgilendirmek
+- KVKK kapsamındaki ihlalleri kayıt altına almak
+- Veri güvenliği açısından daha güvenli alternatifleri tanıtmak
 
 ## Analizler
-| Platform | Risk Skoru | Son Güncelleme |
-|---|---|---|
-| [WhatsApp](analizler/whatsapp/) | 🔴 8/10 | Nisan 2026 |
+
+| Platform | Kategori | Risk Skoru | Son Güncelleme |
+|---|---|---|---|
+| [WhatsApp](whatsapp/) | Mesajlaşma | 🔴 8/10 | Nisan 2026 |
+
+## Alternatifler
+
+"Peki ne kullanalım?" sorusuna cevap arıyorsanız:
+[Alternatifler rehberine bakın →](alternatifler/)
+
+## Metodoloji
+
+Her analiz nasıl yapılıyor? Hangi kriterlere bakıyoruz?
+[Metodoloji belgesini okuyun →](METODOLOJI.md)
 
 ## Katkı
-Yeni platform taleplerini Issues üzerinden iletebilirsiniz.
+
+- Yeni platform talebi: Issues sekmesinden açın
+- Hata bildirimi: Issues sekmesinden açın
+- Katkı rehberi: KATKI.md
+
+## Yasal Uyarı
+
+Bu repo'daki tüm analizler yalnızca bilgilendirme amaçlıdır,
+hukuki tavsiye niteliği taşımaz. Tüm tespitler ilgili platformların
+kendi yayımladığı belgeler ile kamuya açık resmi kurul kararlarına
+dayanmaktadır.
