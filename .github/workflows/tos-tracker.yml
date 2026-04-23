@@ -2,8 +2,8 @@ name: ToS Değişiklik Takibi
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Her Pazartesi 09:00 UTC
-  workflow_dispatch:      # Manuel tetikleme butonu
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Repo'yu çek
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Python kur
         uses: actions/setup-python@v5
@@ -31,16 +33,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python araclar/tos-tracker.py
 
-      - name: Hash dosyasını kaydet
-        uses: actions/commit-files@v1
-        continue-on-error: true
-        with:
-          commit-message: "chore: ToS hash güncellendi"
-          file-pattern: "araclar/hashes.json"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Değişiklikleri commit et
+      - name: Hash değişikliklerini commit et
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
