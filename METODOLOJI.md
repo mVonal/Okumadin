@@ -1,14 +1,3 @@
-# Analiz Metodolojisi
-
-## Neye bakıyoruz?
-
-Her platform analizi aşağıdaki belgeleri kapsar:
-
-- Ana Hizmet Şartları (Terms of Service)
-- Gizlilik Politikası (Privacy Policy)
-- Çerez Politikası (Cookie Policy)
-- Varsa ek politikalar (Channels, Business vb.)
-
 ## Nasıl skorluyoruz?
 
 ### Genel Risk Skoru (1-10)
@@ -16,32 +5,41 @@ Aşağıdaki kriterlerin ağırlıklı ortalamasıdır:
 
 | Kriter | Ağırlık |
 |---|---|
-| Yurt dışı veri aktarımı | %25 |
-| Üçüncü taraf paylaşımı | %20 |
-| Metadata toplama kapsamı | %20 |
+| Yurt dışı veri aktarımı | %20 |
+| Üçüncü taraf paylaşımı | %15 |
+| Metadata toplama kapsamı | %15 |
 | KVKK uyumu | %20 |
-| Şeffaflık ve okunabilirlik | %15 |
+| Belge şeffaflığı ve erişilebilirliği | %15 |
+| Yetkili hukuk ve mahkeme | %15 |
 
-### Renk Kodları
-- 🔴 Kırmızı: Doğrudan risk, kullanıcı aleyhine madde
-- 🟡 Sarı: Dikkat gerektiren, potansiyel risk
-- 🔵 Mavi: Bağlamsal bilgi, istihbarat/yasal çerçeve
+### Her kriter nasıl puanlanır?
 
-## Kaynaklar nasıl doğrulanır?
+**Yurt dışı veri aktarımı:**
+- 1-2: Veri Türkiye'de, KVKK uyumlu
+- 5-6: Belirsiz veya kısmi
+- 9-10: ABD/yabancı sunucu, KVKK ihlali kayıtlı
 
-- Her tespit mutlaka kaynak belge ve madde numarasıyla belgelenir
-- Resmi kurul kararları (KVKK, Rekabet Kurumu) birincil kaynak olarak kullanılır
-- Analizler yalnızca kamuya açık belgelere dayanır
-- Yorumlar ile olgular birbirinden net biçimde ayrılır
+**Üçüncü taraf paylaşımı:**
+- 1-2: Paylaşım yok veya yalnızca zorunlu altyapı
+- 5-6: Sınırlı, açık rızaya dayalı
+- 9-10: Meta gibi reklam ekosistemiyle kapsamlı paylaşım
 
-## Güncelleme politikası
+**Metadata toplama kapsamı:**
+- 1-2: Yalnızca telefon numarası veya minimal
+- 5-6: Orta düzey kullanım verileri
+- 9-10: Konum, cihaz, timing, grup üyeliği, davranışsal profil
 
-Platform şartları değiştiğinde:
-1. Değişiklik `degisiklik-log.md` dosyasına işlenir
-2. Etkilenen maddeler yeniden analiz edilir
-3. Risk skoru güncellenir
+**KVKK uyumu:**
+- 1-2: KVKK'ya açık atıf, Aydınlatma Metni mevcut, ihlal yok
+- 5-6: Kısmi uyum veya belirsiz
+- 9-10: KVKK ihlali kayıtlı ve/veya ceza almış
 
-## Yasal Çerçeve
+**Belge şeffaflığı ve erişilebilirliği:**
+- 1-2: Türkçe, kamuya açık URL, güncel, okunabilir
+- 5-6: İngilizce veya eski tarihli
+- 9-10: Kamuya açık URL yok, belge eksik
 
-Bu analizler bilgilendirme amaçlıdır, hukuki tavsiye değildir.
-Tüm tespitler ilgili platformların kendi belgelerine dayanmaktadır.
+**Yetkili hukuk ve mahkeme:**
+- 1-2: Türk hukuku, Türk mahkemeleri
+- 5-6: Belirsiz veya karma
+- 9-10: Yabancı hukuk, yabancı mahkemeler, bireysel başvuru imkânsız
