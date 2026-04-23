@@ -18,7 +18,7 @@ Bu proje üç amaca hizmet eder:
 
 - Kullanıcıları dijital hakları konusunda bilgilendirmek
 - KVKK kapsamındaki ihlalleri kayıt altına almak
-- Veri güvenliği açısından daha güvenli alternatifleri tanıtmak
+- Veri güvenliği açısından daha güvenli yerli alternatifleri tanıtmak
 
 ## Analizler
 
