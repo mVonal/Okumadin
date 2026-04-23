@@ -29,7 +29,7 @@ Bu proje üç amaca hizmet eder:
 ## Alternatifler
 
 "Peki ne kullanalım?" sorusuna cevap arıyorsanız:
-[Alternatifler rehberine bakın →](alternatifler/)
+[Alternatifler rehberine bakın →](whatsapp/alternatifler/)
 
 ## Metodoloji
 
