@@ -51,6 +51,20 @@ PLATFORMS = [
         "url": "https://signal.org/legal/",
         "selector": "body",
     },
+    {
+        "id": "trendyol-uyelik",
+        "platform": "Trendyol",
+        "belge": "Üyelik Sözleşmesi",
+        "url": "https://www.trendyol.com/s/alici-uyelik-sozlesmesi",
+        "selector": "body",
+    },
+    {
+        "id": "trendyol-kvkk",
+        "platform": "Trendyol",
+        "belge": "Aydınlatma Metni",
+        "url": "https://www.trendyol.com/kisisel_verilerin_korunmasi",
+        "selector": "body",
+    },
 ]
 
 HASHES_FILE = "araclar/hashes.json"
