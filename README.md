@@ -25,6 +25,10 @@ Bu proje üç amaca hizmet eder:
 | Platform | Kategori | Risk Skoru | Son Güncelleme |
 |---|---|---|---|
 | [WhatsApp](whatsapp/) | Mesajlaşma | 🔴 8/10 | Nisan 2026 |
+|---|---|---|---|
+| [Offsec](offsec/) | Siber Güvenlik Eğitimi | 🟠 7/10  | Nisan 2026 |
+|---|---|---|---|
+| [Trendyol](trendyol/) | E-Ticaret | 🟠 6.5/10 | Nisan 2026 |
 
 ## Alternatifler
 
