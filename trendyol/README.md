@@ -7,6 +7,7 @@
 **Belge versiyonları:**
 - Üyelik Sözleşmesi: Güncel (tarih belirtilmemiş)
 - Aydınlatma Metni: 22.08.2024
+- Çerez Politikası: 27.08.2024
 **Kaynaklar:**
 - https://www.trendyol.com/s/alici-uyelik-sozlesmesi
 - https://www.trendyol.com/kisisel_verilerin_korunmasi
@@ -46,7 +47,8 @@ aşağıdakilerin tümünü kabul etmiş sayılırsınız:
 |---|---|
 | Üyelik Sözleşmesi | Kayıt sırasında |
 | Aydınlatma Metni | Kayıt sırasında |
-| Trendyol Go (Yemek/Market) Veri Politikası | İlgili ekrana geçişte |
+| Çerez Politikası | Siteye girişte |
+| Trendyol Go Veri Politikası | Yemek/Market ekranına geçişte |
 | Trendyol Sigorta Aydınlatma Metni | Sigorta ekranına geçişte |
 | Finansal Çözümler Aydınlatma Metni | İlgili ekrana geçişte |
 | Şanslı Çekiliş Aydınlatma Metni | Bilet alımında |
@@ -57,21 +59,20 @@ aşağıdakilerin tümünü kabul etmiş sayılırsınız:
 ## ⚠️ Önemli Başlangıç Notu: Alibaba Faktörü
 
 Trendyol yasal olarak Türk hukukuna tabi bir şirkettir. Ancak
-Alibaba Group, Ticaret Sicili Gazetesi'nde yayımlanan ve birden
-fazla finans kuruluşunun haberleştiği belgelere göre şirketin
-**%86,5 hissesine** sahiptir. Bu durum şu anlama gelir:
+Alibaba Group, Ticaret Sicili Gazetesi'nde yayımlanan belgelere
+ve birden fazla finans kuruluşunun haberlerine göre şirketin
+**%86,5 hissesine** sahiptir.
 
-Trendyol "iştirakleri ve grup şirketleri" ile veri paylaşımını
-kendi Aydınlatma Metni'nde açıkça belgelemiştir. Alibaba bir
-Çin şirketidir. Çin'in 2017 tarihli Siber Güvenlik Kanunu ve
-2021 tarihli Veri Güvenliği Kanunu, Çinli şirketlere devlet
-talepleri karşısında veri paylaşımını zorunlu kılmaktadır.
+Trendyol kendi Aydınlatma Metni'nde "iştirakler ve grup
+şirketleri" ile veri paylaşımını açıkça belgelemiştir.
+Alibaba bir Çin şirketidir. Çin'in 2017 tarihli Siber
+Güvenlik Kanunu ve 2021 tarihli Veri Güvenliği Kanunu,
+Çinli şirketlere devlet talepleri karşısında veri paylaşımını
+zorunlu kılmaktadır.
 
 Bu çerçeve, doğrudan "Trendyol verilerinizi Çin'e gönderiyor"
-iddiası değildir. Trendyol yasal güvenceleri olan standart
-sözleşme mekanizmasını kullandığını belirtmektedir. Ancak
-bu yapısal ilişkinin farkında olunması kullanıcıların bilgiye
-dayalı karar vermesini sağlar.
+iddiası değildir. Ancak bu yapısal ilişkinin farkında olunması
+kullanıcıların bilgiye dayalı karar vermesini sağlar.
 
 **Kaynak:** Ticaret Sicili Gazetesi · Capital.com.tr (Ocak 2025)
 · Bloomberg HT (Nisan 2021)
@@ -97,13 +98,13 @@ dayalı karar vermesini sağlar.
 ### 1. TC Kimlik Numaranız Toplanıyor
 
 Aydınlatma Metni'nin 2. maddesine göre belirli ürün
-gruplarının satın alımında T.C. Kimlik Numarası işlenmektedir.
-TC Kimlik Numarası, Türk hukukunda en kritik kimlik tanımlayıcı
-belgedir — sosyal güvenlik, vergi, tapu, bankacılık ve sağlık
-sistemlerinin tümüne kapı açar.
+gruplarının satın alımında T.C. Kimlik Numarası
+işlenmektedir. TC Kimlik Numarası Türk hukukunda en
+kritik kimlik tanımlayıcıdır — sosyal güvenlik, vergi,
+tapu, bankacılık ve sağlık sistemlerinin tümüne kapı açar.
 
-Bu verinin bir e-ticaret platformunda işlenmesi ve üçüncü
-taraflarla paylaşılabilmesi ciddi bir risk oluşturmaktadır.
+Bu verinin bir e-ticaret platformunda işlenmesi ve
+üçüncü taraflarla paylaşılabilmesi ciddi risk oluşturur.
 
 **Kaynak:** Aydınlatma Metni Madde 2 — Kullanıcı Hesap Bilgileri
 
@@ -113,9 +114,9 @@ taraflarla paylaşılabilmesi ciddi bir risk oluşturmaktadır.
 
 Aydınlatma Metni'nin 2. maddesine göre ödeme bilgileri
 kapsamında "kayıtlı kart bilgileriniz" işlenmektedir.
-Ödeme kartı verilerinin bir alışveriş platformunda saklanması,
-olası bir veri ihlali durumunda doğrudan finansal risk
-oluşturur.
+Ödeme kartı verilerinin bir alışveriş platformunda
+saklanması, olası bir veri ihlali durumunda doğrudan
+finansal risk oluşturur.
 
 **Kaynak:** Aydınlatma Metni Madde 2 — Ödeme Bilgileri
 
@@ -125,9 +126,9 @@ oluşturur.
 
 Aydınlatma Metni'nin 4.1 maddesine göre üyelik ve hesap
 süreçlerinde kişisel veriler "iştiraklerimizle ve grup
-şirketlerimizle" paylaşılmaktadır. %86,5 hissesiyle
+şirketlerimizle" paylaşılmaktadır. %86,5 hisseyle
 Trendyol'un fiili kontrolünü elinde bulunduran Alibaba
-Group, bu tanımın kapsamına girmektedir.
+Group bu tanımın kapsamına girmektedir.
 
 **Kaynak:** Aydınlatma Metni Madde 4.1
 
@@ -151,24 +152,67 @@ Aktarım mekanizması olarak KVKK madde 9 kapsamında
 ### 5. Çağrı Merkezi Ses Kayıtları
 
 Aydınlatma Metni'nin 2. maddesine göre müşteri hizmetleri
-ile görüşmeniz halinde ses kaydınız "işitsel kayıt"
-olarak işlenmektedir. Bu kaydın ne kadar süre saklandığı,
-kimlerle paylaşıldığı ve nasıl imha edildiği aydınlatma
-metninde açıkça belirtilmemiştir.
+ile görüşmeniz halinde ses kaydınız "işitsel kayıt" olarak
+işlenmektedir. Bu kaydın ne kadar süre saklandığı,
+kimlerle paylaşıldığı ve nasıl imha edildiği açıkça
+belirtilmemiştir.
 
 **Kaynak:** Aydınlatma Metni Madde 2 — İşitsel Kayıt Bilgileri
 
 ---
 
-### 6. Gizlilik Politikası Linki 404 Veriyor
+### 6. Üyelik Sözleşmesi'ndeki Gizlilik Politikası Linki Kırık
 
 Üyelik Sözleşmesi'nin 4.1 maddesinde atıfta bulunulan
 `trendyol.com/kisisel_verilerin_korunmasi.html` bağlantısı
-**404 hatası** vermektedir. Sözleşmede dayandırılan temel
-belgeye erişilememesi şeffaflık yükümlülüğüyle çelişmektedir.
+**404 hatası** vermektedir. Aydınlatma Metni'ne doğrudan
+`trendyol.com/kisisel_verilerin_korunmasi` adresinden
+erişilebilmekle birlikte, sözleşme içindeki resmi
+bağlantının kırık olması şeffaflık yükümlülüğüyle
+çelişmektedir.
 
 **Kaynak:** Üyelik Sözleşmesi Madde 4.1 ·
 Kullanıcı tarafından doğrulanan 404 hatası (24.04.2026)
+
+---
+
+### 7. Hedefleme Çerezleri ve Davranışsal Profilleme
+
+Çerez Politikasının "Hedefleme Amaçlı Tanımlama Çerezleri"
+bölümüne göre bu çerezler reklam ortakları tarafından
+yerleştirilebilmekte ve "diğer sitelerdeki ilgili reklamları
+göstermek için" ilgi alanı profili oluşturmak amacıyla
+kullanılabilmektedir. Trendyol'daki davranışlarınız
+başka sitelerde size gösterilen reklamları etkiler.
+
+**Kaynak:** Çerez Politikası Madde 1.1.2
+
+---
+
+### 8. Google Analytics ile Yurt Dışı Veri Aktarımı
+
+Çerez Politikasında açıkça belirtilmektedir: Trendyol,
+**Google Inc.** tarafından sağlanan Google Analytics
+hizmetini kullanmakta ve söz konusu veriler Google'ın
+ABD merkezli altyapısına aktarılmaktadır. Aktarım
+mekanizması olarak KVKK madde 9 kapsamında "standart
+sözleşme" yöntemi kullanıldığı belirtilmektedir.
+
+**Kaynak:** Çerez Politikası "Veri Aktarımı" bölümü
+
+---
+
+### 9. Sosyal Medya Girişinde Üçüncü Taraf Veri Paylaşımı
+
+Çerez Politikasına göre üçüncü taraf çerezler vasıtasıyla
+elde edilen kişisel veriler, sosyal medya hesabınızla
+giriş yapmanız halinde **ilgili sosyal medya platformuyla
+paylaşılabilmektedir.**
+
+Facebook veya Google hesabıyla Trendyol'a giriş yapan
+kullanıcılar bu paylaşımı aktif hale getirmektedir.
+
+**Kaynak:** Çerez Politikası "Veri Aktarımı" bölümü
 
 ---
 
@@ -176,10 +220,10 @@ Kullanıcı tarafından doğrulanan 404 hatası (24.04.2026)
 
 ### Şartlar Tek Taraflı Değiştirilebilir
 
-Üyelik Sözleşmesi'ne göre DSM, sözleşmeyi ve Gizlilik
-Politikası da dahil her türlü politikayı "uygun göreceği
-herhangi bir zamanda" tek taraflı olarak değiştirebilir.
-Kullanmaya devam etmek yeni şartları kabul anlamına gelir.
+Üyelik Sözleşmesi'ne göre DSM, sözleşmeyi ve tüm
+politikaları "uygun göreceği herhangi bir zamanda"
+tek taraflı olarak değiştirebilir. Kullanmaya devam
+etmek yeni şartları kabul anlamına gelir.
 
 **Kaynak:** Üyelik Sözleşmesi Madde 5
 
@@ -188,9 +232,9 @@ Kullanmaya devam etmek yeni şartları kabul anlamına gelir.
 ### Şirket Satışında Verileriniz Devredilir
 
 Aydınlatma Metni'nin 3.4 maddesine göre "olası şirket
-birleşme, devralma, ortak girişim, bölünme ve sair yapısal
-değişikliklerde" kişisel veriler potansiyel alıcı ve
-satıcılarla paylaşılabilmektedir.
+birleşme, devralma, ortak girişim, bölünme ve sair
+yapısal değişikliklerde" kişisel veriler potansiyel
+alıcı ve satıcılarla paylaşılabilmektedir.
 
 **Kaynak:** Aydınlatma Metni Madde 3.4
 
@@ -202,22 +246,28 @@ Ana Aydınlatma Metni'nde kişisel verilerin ne kadar
 süreyle saklanacağı açıkça belirtilmemiştir. Yalnızca
 "mevzuat ve şirket politikalarına uygun şekilde saklanır
 ve imha edilir" gibi genel ifadeler kullanılmıştır.
-BiP'in "azami 2 yıl" gibi net sınır koymasıyla
-kıyaslandığında belirsizlik dikkat çekmektedir.
 
-**Kaynak:** Aydınlatma Metni Madde 7 (Saklama Süreleri bölümü)
+**Kaynak:** Aydınlatma Metni Madde 7
 
 ---
 
-### Reklam Profilleme Açık Rızaya Dayalı Ama...
+### Zorunlu Çerezler Kapatılamıyor
+
+Çerez Politikasına göre zorunlu çerezler
+"sistemlerimizce kapatılması mümkün olmayan"
+çerezlerdir. Kullanıcının bu çerezler üzerinde
+kontrol imkânı bulunmamaktadır.
+
+**Kaynak:** Çerez Politikası Madde 1.1.4
+
+---
+
+### Reklam Profilleme Açık Rızaya Dayalı — Ama Dikkat
 
 Aydınlatma Metni'nin 3.6 maddesine göre pazarlama,
 reklam ve profilleme faaliyetleri açık rızaya dayalıdır.
-Bu kendi başına olumlu bir özelliktir. Ancak kayıt
-sırasında bu onayların nasıl sunulduğu — önceden
-işaretli kutular, ya da onay vermeden devam etmenin
-güçleştirilmesi — kullanıcı deneyimine bağlıdır
-ve belgeden doğrulanamaz.
+Bu kendi başına olumludur. Ancak kayıt sırasında bu
+onayların nasıl sunulduğu belgeden doğrulanamaz.
 
 **Kaynak:** Aydınlatma Metni Madde 3.6
 
@@ -259,9 +309,10 @@ Ticaret Sicili Gazetesi (Mart 2021)
 | KVKK'ya açık atıf | 🟢 Var |
 | Yurt dışı aktarım mekanizması | 🟡 Standart sözleşme (KVKK m.9) |
 | TC Kimlik No işleme gerekçesi | 🟡 Mevzuat dayanaklı ama risk yüksek |
-| Saklama süresi şeffaflığı | 🔴 Belirsiz |
-| 404 veren politika linki | 🔴 Şeffaflık ihlali |
-| Yetkili kişi / kurul iletişimi | 🟢 Belgelenmiş (kvkk@trendyol.com) |
+| Çerez tabanlı profilleme | 🟡 Açık rızaya dayalı |
+| Veri saklama süresi | 🔴 Belirsiz |
+| Sözleşmedeki politika linki | 🔴 404 veriyor |
+| Yetkili kişi/kurul iletişimi | 🟢 Belgelenmiş (kvkk@trendyol.com) |
 
 ---
 
@@ -270,9 +321,9 @@ Ticaret Sicili Gazetesi (Mart 2021)
 ### Hepsiburada
 
 Hanzade Doğan liderliğinde kurulan ve NASDAQ'ta (HEPS)
-işlem gören Hepsiburada, Türkiye merkezli bir
-e-ticaret platformudur. Alibaba gibi yabancı bir
-çoğunluk hissedarı bulunmamaktadır.
+işlem gören Hepsiburada, Türkiye merkezli bir e-ticaret
+platformudur. Alibaba gibi yabancı bir çoğunluk hissedarı
+bulunmamaktadır.
 
 Bu repo'da Hepsiburada'nın ayrıca analiz edilmesi
 planlanmaktadır.
@@ -289,6 +340,7 @@ planlanmaktadır.
 |---|---|---|
 | Üyelik Sözleşmesi | https://www.trendyol.com/s/alici-uyelik-sozlesmesi | 24.04.2026 |
 | Aydınlatma Metni | https://www.trendyol.com/kisisel_verilerin_korunmasi | 24.04.2026 |
+| Çerez Politikası | https://www.trendyol.com/cerez_politikasi | 24.04.2026 |
 | Bağlı politika (404) | https://www.trendyol.com/kisisel_verilerin_korunmasi.html | 24.04.2026 |
-| Alibaba hisse oranı | https://www.capital.com.tr/sirket-panosu (Ocak 2025) | 24.04.2026 |
+| Alibaba hisse oranı | https://www.capital.com.tr (Ocak 2025) | 24.04.2026 |
 | Çin Siber Güvenlik Kanunu | https://www.cac.gov.cn | Referans |
