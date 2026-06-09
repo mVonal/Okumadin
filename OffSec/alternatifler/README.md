@@ -51,7 +51,7 @@ aşamadan oluşur.
 | Uluslararası tanınırlık | Yüksek | Sınırlı |
 | Sınav dili | İngilizce | Türkçe |
 | Pratik sınav | Evet (24 saat) | Evet (senaryo bazlı) |
-| Maliyet (2025) | ~65.000 TL (kur bazlı) | ~31.440 TL (KDV dahil) |
+| Göreli maliyet | Daha yüksek | Daha düşük |
 | Sertifika geçerliliği | Süresiz | 3 yıl |
 
 ---
@@ -72,8 +72,10 @@ kapsamında TSE belgesi yasal zorunluluk haline gelmektedir.
 Türksat A.Ş. ve benzeri kamu kurumları bu standardı
 benimsemiştir.
 
-**Maliyet avantajı:** OffSec sertifikalarının yaklaşık
-yarı fiyatına yerli sertifikasyon imkânı sunmaktadır.
+**Maliyet avantajı:** TSE sertifikasyonu OffSec
+sertifikalarına kıyasla belirgin biçimde daha
+uygun maliyetlidir. Güncel ücretler için
+tse.org.tr adresini ziyaret edin.
 
 ---
 
