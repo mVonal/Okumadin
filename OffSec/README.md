@@ -31,6 +31,26 @@ veri aktarımlarını engelleyemezler. Çünkü siz bizzat onayladınız.
 
 ---
 
+## ÖZ
+
+**Tek cümle:** OffSec bir ABD şirketi — sınav webcam
+kayıtlarınız ABD'de saklanıyor, işvereniniz eğitiminizi
+finanse ettiyse sınav sonuçlarınıza erişebiliyor ve
+sertifika bilgileriniz kamuya açık veritabanında görünüyor.
+
+**En kritik 3 madde:**
+1. İşvereniniz ödediyse hesabınız işveren kontrolüne girer,
+   tüm sınav verileri işverenle paylaşılır
+2. Sertifika sahiplerinin isim, uzmanlık ve sınav bilgileri
+   kamuya açık kayıtta — savunma ve kritik altyapı
+   çalışanları için OPSEC riski
+3. ToS, sınav davranış verisi ve webcam kayıtlarının
+   AI eğitiminde kullanılamayacağına dair güvence içermiyor
+
+**Risk skoru:** 🟠 7/10
+
+---
+
 ## Kabul Ettiğiniz Belgeler
 
 | Belge | Kabul Yöntemi |
