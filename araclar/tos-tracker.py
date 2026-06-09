@@ -65,13 +65,27 @@ PLATFORMS = [
         "url": "https://www.trendyol.com/kisisel_verilerin_korunmasi",
         "selector": "body",
     },
+    {
+        "id": "offsec-tos",
+        "platform": "OffSec",
+        "belge": "Terms and Conditions",
+        "url": "https://offsec.com/legal-docs/",
+        "selector": "body",
+    },
+    {
+        "id": "offsec-privacy",
+        "platform": "OffSec",
+        "belge": "Privacy Notice",
+        "url": "https://www.offsec.com/legal/privacy-policy/",
+        "selector": "body",
+    },
 ]
 
 HASHES_FILE = "araclar/hashes.json"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; OkumadinBot/1.0; "
-        "+https://github.com/okumadin)"
+        "+https://github.com/mVonal/Okumadin)"
     )
 }
 
@@ -128,7 +142,8 @@ def open_github_issue(platform: str, belge: str, url: str) -> None:
         f"- [ ] Değişiklik log'una ekle\n"
         f"- [ ] Sosyal medya içeriği planla\n\n"
         f"---\n"
-        f"*Bu issue okumadin ToS takip botu tarafından otomatik açıldı.*"
+        f"*Bu issue Okumadın ToS takip botu tarafından "
+        f"otomatik açıldı.*"
     )
 
     api_url = f"https://api.github.com/repos/{repo}/issues"
@@ -149,13 +164,19 @@ def open_github_issue(platform: str, belge: str, url: str) -> None:
 
 
 def main() -> None:
-    print(f"ToS Takip Botu başlatıldı — {datetime.now(timezone.utc).isoformat()}\n")
+    print(
+        f"ToS Takip Botu başlatıldı — "
+        f"{datetime.now(timezone.utc).isoformat()}\n"
+    )
     hashes = load_hashes()
     degisiklik_sayisi = 0
 
     for platform in PLATFORMS:
         pid = platform["id"]
-        print(f"Kontrol ediliyor: {platform['platform']} / {platform['belge']}")
+        print(
+            f"Kontrol ediliyor: "
+            f"{platform['platform']} / {platform['belge']}"
+        )
 
         icerik = fetch_page(platform["url"], platform["selector"])
         if icerik is None:
@@ -168,7 +189,7 @@ def main() -> None:
         if eski_hash is None:
             print("  İlk kayıt — hash kaydedildi")
         elif yeni_hash != eski_hash:
-            print(f"  DEĞİŞİKLİK TESPİT EDİLDİ!")
+            print("  DEĞİŞİKLİK TESPİT EDİLDİ!")
             degisiklik_sayisi += 1
             open_github_issue(
                 platform["platform"],
