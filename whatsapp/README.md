@@ -24,6 +24,24 @@ kayıtlı bir **Amerikan şirketidir**. Bu fark kritiktir:
 
 ---
 
+## ÖZ
+
+**Tek cümle:** WhatsApp verileriniz ABD'de işleniyor,
+telefon rehberiniz sunuculara yükleniyor ve bir
+uyuşmazlıkta Türk mahkemelerine gidemezsiniz.
+
+**En kritik 3 madde:**
+1. Türkiye EEA dışında — sözleşmenizin tarafı ABD'de
+   kayıtlı WhatsApp LLC, GDPR koruması geçerli değil
+2. Mesaj içeriği şifreli ama metadata (kiminle, ne zaman,
+   ne sıklıkla) şifresiz olarak toplanıyor
+3. KVKK Kurulu ihlal tescil etti ve 2,65 milyon TL
+   idari para cezası kesti
+
+**Risk skoru:** 🔴 8/10
+
+---
+
 ## Kabul Ettiğiniz Belgeler
 
 WhatsApp'ı kullanarak yalnızca bir belge değil, aşağıdakilerin
