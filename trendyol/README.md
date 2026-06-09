@@ -10,6 +10,7 @@
 **Kaynaklar:**
 - https://www.trendyol.com/s/alici-uyelik-sozlesmesi
 - https://www.trendyol.com/kisisel_verilerin_korunmasi
+- https://www.trendyol.com/cerez_politikasi
 
 > Bu analiz yalnızca bilgilendirme amaçlıdır, hukuki tavsiye niteliği
 > taşımaz. Tüm tespitler Trendyol'un kendi yayımladığı belgelere ve
