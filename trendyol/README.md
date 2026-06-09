@@ -18,6 +18,25 @@
 
 ---
 
+## ÖZ
+
+**Tek cümle:** Trendyol'un fiili kontrolü %86,5 hisseyle
+Alibaba'da — Çin hukukuna tabi bu yapı, TC Kimlik Numaranız
+ve ödeme bilgilerinizin iştiraklerle paylaşılmasına zemin
+hazırlıyor.
+
+**En kritik 3 madde:**
+1. "İştirakler ve grup şirketleri" ile veri paylaşımı
+   belgelenmiş — bu tanım Alibaba Group şirketlerini kapsar
+2. TC Kimlik Numarası ve kayıtlı kart bilgileri işleniyor;
+   Üyelik Sözleşmesi'ndeki gizlilik linki 404 veriyor
+3. Hedefleme çerezleri ve Google Analytics ile davranışsal
+   profil oluşturuluyor, veriler ABD altyapısına aktarılıyor
+
+**Risk skoru:** 🟠 6,5/10
+
+---
+
 ## Kabul Ettiğiniz Belgeler
 
 Trendyol'a üye olarak yalnızca tek bir belgeyi değil,
