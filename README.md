@@ -26,7 +26,7 @@ Bu proje üç amaca hizmet eder:
 |---|---|---|---|
 | [WhatsApp](whatsapp/) | Mesajlaşma | 🔴 8/10 | Nisan 2026 |
 |---|---|---|---|
-| [Offsec](offsec/) | Siber Güvenlik Eğitimi | 🟠 7/10  | Nisan 2026 |
+| [Offsec](Offsec/) | Siber Güvenlik Eğitimi | 🟠 7/10  | Nisan 2026 |
 |---|---|---|---|
 | [Trendyol](trendyol/) | E-Ticaret | 🟠 6.5/10 | Nisan 2026 |
 
