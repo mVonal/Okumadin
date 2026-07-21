@@ -1,0 +1,85 @@
+{
+  "$schema": "okm-analiz-semasi-v1.0",
+  "meta": {
+    "analysis_id": "okm-whatsapp-v1",
+    "platform_adi": "WhatsApp",
+    "kategori": "Mesajlaşma",
+    "isletici_sirket": "WhatsApp LLC",
+    "ana_ulke": "ABD",
+    "fiili_kontrol": "Meta Platforms Inc.",
+    "applicable_regions": ["Turkey", "EEA_Disinda"],
+    "analiz_tarihi": "2026-04-23",
+    "okm_rm_versiyonu": "1.0"
+  },
+  "durum": {
+    "status": "published",
+    "review_durumu": "editor_onayli",
+    "son_dogrulama": "2026-04-23",
+    "son_belge_kontrolu": "2026-04-23"
+  },
+  "belgeler": {
+    "hizmet_sartlari": {
+      "url": "https://www.whatsapp.com/legal/terms-of-service",
+      "version": "2021-01-04",
+      "sha256": "...",
+      "indirildigi_tarih": "2026-04-23"
+    },
+    "gizlilik_politikasi": {
+      "url": "https://www.whatsapp.com/legal/privacy-policy",
+      "version": "2021-01-04",
+      "sha256": "...",
+      "indirildigi_tarih": "2026-04-23"
+    },
+    "cerez_politikasi": {
+      "url": "https://www.whatsapp.com/legal/cookies",
+      "version": "2026-02-25",
+      "sha256": "...",
+      "indirildigi_tarih": "2026-04-23"
+    }
+  },
+  "skor": {
+    "okm_score": 8.0,
+    "kategori": "High",
+    "renk": "🔴",
+    "kriter_puanlari": {
+      "yurt_disi_veri_aktarimi": 9,
+      "ucuncu_taraf_paylasimi": 8,
+      "metadata_kapsami": 9,
+      "kvkk_uyumu": 9,
+      "belge_seffafligi": 5,
+      "yetkili_hukuk": 9
+    },
+    "confidence": {
+      "score": null,
+      "durum": "hesaplanmadi_v1.0",
+      "reason": null
+    }
+  },
+  "bulgu_referanslari": [
+    "okm-finding-whatsapp-001",
+    "okm-finding-whatsapp-002"
+  ],
+  "alternatifler": [
+    {
+      "name": "Signal",
+      "okm_score": 3.0,
+      "reason": [
+        "Open Source",
+        "Minimal Metadata",
+        "E2EE by default"
+      ]
+    }
+  ],
+  "uretim": {
+    "ilk_taslak": "AI",
+    "editor": "Muhammet",
+    "son_inceleyen": "Muhammet"
+  },
+  "degisiklik_gecmisi": [
+    {
+      "tarih": "2026-04-23",
+      "versiyon": "1.0",
+      "aciklama": "İlk analiz"
+    }
+  ]
+}
