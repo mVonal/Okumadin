@@ -1,0 +1,37 @@
+{
+  "$schema": "okm-bulgu-semasi-v1.0",
+  "bulgu_id": "okm-finding-whatsapp-001",
+  "platform_adi": "WhatsApp",
+  "analysis_id": "okm-whatsapp-v1",
+  "taxonomy": "DATA_TRANSFER",
+  "severity": {
+    "code": "HIGH",
+    "display": "🔴 Kırmızı"
+  },
+  "baslik": "Veriler ABD sunucularında işleniyor",
+  "fact": {
+    "metin": "Gizlilik Politikası, verilerin ABD dahil küresel altyapıda işlenebileceğini belirtiyor.",
+    "kanit_kodu": "A",
+    "kaynak": {
+      "belge": "Gizlilik Politikası",
+      "url": "https://www.whatsapp.com/legal/privacy-policy",
+      "section": "Küresel Faaliyetlerimiz",
+      "madde": null,
+      "paragraf": "1"
+    }
+  },
+  "interpretation": {
+    "metin": "Bu, Türk kullanıcı verilerinin KVKK'nın yurt dışı aktarım hükümleri kapsamına girdiği anlamına gelir."
+  },
+  "risk": {
+    "metin": "Veriler farklı gizlilik rejimlerine tabi olabileceğinden risk oluşturabilir."
+  },
+  "ilgili_mevzuat": [
+    "KVKK Madde 9",
+    "CLOUD Act"
+  ],
+  "etki_alani": [
+    "Turkiye",
+    "EEA_Disinda"
+  ]
+}
