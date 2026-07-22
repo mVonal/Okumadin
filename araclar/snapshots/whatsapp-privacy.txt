@@ -1,80 +1,5 @@
 Gizlilik İlkesi
-Uygulamalar
-Özellikler
-Arama
-Mesajlaşma
-Gruplar
-Durum
-Kanallar
-Meta AI
-Güvenlik
-Gizlilik
-Yardım Merkezi
-Blog
-İşletmeler İçin
 İndir
-English
-العربية
-অসমীয়া
-বাংলা
-Deutsch
-Español
-Français
-ગુજરાતી
-עברית
-हिन्दी
-Bahasa Indonesia
-Italiano
-日本語
-ಕನ್ನಡ
-한국어
-മലയാളം
-मराठी
-नेपाली
-Oriya
-ਪੰਜਾਬੀ
-Português (Brasil)
-русский
-தமிழ்
-తెలుగు
-ไทย
-Filipino
-Türkçe
-اردو
-简体中文
-繁體中文（香港）
-English
-العربية
-অসমীয়া
-বাংলা
-Deutsch
-español
-français
-ગુજરાતી
-עברית
-हिन्दी
-Bahasa Indonesia
-italiano
-日本語
-ಕನ್ನಡ
-한국어
-മലയാളം
-मराठी
-नेपाली
-Oriya
-ਪੰਜਾਬੀ
-Português (Brasil)
-русский
-தமிழ்
-తెలుగు
-ไทย
-Filipino
-Türkçe
-اردو
-简体中文
-繁體中文（香港）
-Koşullar ve Gizlilik İlkesi
-2026 © WhatsApp LLC
 Özellikler
 Arama
 Mesajlaşma
@@ -84,10 +9,10 @@ Meta AI
 Durum
 Güvenlik
 Gizlilik
-Yardım Merkezi
 Blog
-İşletmeler İçin
 Uygulamalar
+Yardım Merkezi
+İşletmeler İçin
 Giriş Yap
 İndir
 WhatsApp Gizlilik İlkesi
