@@ -45,9 +45,10 @@ SNAPSHOT_DIR = Path("araclar/snapshots")
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (compatible; OkumadinBot/2.0; "
+        "Mozilla/5.0 (compatible; OkumadinBot/2.1; "
         "+https://github.com/mVonal/Okumadin)"
-    )
+    ),
+    "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.5",
 }
 
 # ── OKM Taxonomy anahtar kelimeleri ──────────────────────────────────────────
