@@ -1,4 +1,140 @@
 Cookies
+Apps
+Features
+Calling
+Messaging
+Groups
+Status
+Channels
+Meta AI
+Security
+Privacy
+Help Center
+Blog
+For Business
+Download
+Azərbaycan
+Afrikaans
+Bahasa Indonesia
+Melayu
+Català
+čeština
+Dansk
+Deutsch
+Eesti
+English
+Español
+Français
+Gaeilge
+Hrvatski
+Italiano
+Kiswahili
+Latviešu
+Lietuvių
+Magyar
+Nederlands
+Norsk bokmål
+O‘zbek
+Filipino
+Polski
+Português (Brasil)
+Português (Portugal)
+Română
+Shqip
+Slovenčina
+Slovenščina
+Suomi
+Svenska
+Tiếng Việt
+Türkçe
+Ελληνικά
+български
+қазақ тілі
+македонски
+русский
+српски
+українська
+עברית
+العربية
+فارسی
+اردو
+বাংলা
+हिन्दी
+ગુજરાતી
+ಕನ್ನಡ
+मराठी
+ਪੰਜਾਬੀ
+தமிழ்
+తెలుగు
+മലയാളം
+ไทย
+简体中文
+繁體中文（台灣）
+繁體中文（香港）
+日本語
+한국어
+azərbaycan
+Afrikaans
+Bahasa Indonesia
+Melayu
+català
+čeština
+dansk
+Deutsch
+eesti
+English
+español
+français
+Gaeilge
+hrvatski
+italiano
+Kiswahili
+latviešu
+lietuvių
+magyar
+Nederlands
+norsk bokmål
+o‘zbek
+Filipino
+polski
+Português (Brasil)
+Português (Portugal)
+română
+shqip
+slovenčina
+slovenščina
+suomi
+svenska
+Tiếng Việt
+Türkçe
+Ελληνικά
+български
+қазақ тілі
+македонски
+русский
+српски
+українська
+עברית
+العربية
+فارسی
+اردو
+বাংলা
+हिन्दी
+ગુજરાતી
+ಕನ್ನಡ
+मराठी
+ਪੰਜਾਬੀ
+தமிழ்
+తెలుగు
+മലയാളം
+ไทย
+简体中文
+繁體中文（台灣）
+繁體中文（香港）
+日本語
+한국어
+Terms & Privacy Policy
+2026 © WhatsApp LLC
 Features
 Calling
 Messaging
@@ -8,11 +144,10 @@ Meta AI
 Status
 Security
 Privacy
-Blog
-Apps
 Help Center
+Blog
 For Business
-Download
+Apps
 Download
 Cookies
 Effective February 25, 2026 (
