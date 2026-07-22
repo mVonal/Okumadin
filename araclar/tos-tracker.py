@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -119,14 +120,31 @@ def sha256(text: str) -> str:
 
 # ── Ağdan çekme ──────────────────────────────────────────────────────────────
 
-def sayfa_cek(url: str) -> str | None:
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        r.raise_for_status()
-        return temizle_metin(r.text)
-    except Exception as e:
-        print(f"  HATA: {url} çekilemedi — {e}")
-        return None
+def sayfa_cek(url: str, bekleme: float = 3.0) -> str | None:
+    """Sayfayı iki kez çeker ve yalnızca her iki çekimde de bulunan
+    satırları döner. Dönen banner, reklam, zaman damgası gibi dinamik
+    içerik böylece elenir — siteye özel kural gerekmez."""
+    metinler = []
+
+    for i in range(2):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            r.raise_for_status()
+            metinler.append(temizle_metin(r.text))
+        except Exception as e:
+            print(f"  HATA: {url} çekilemedi — {e}")
+            return None
+        if i == 0:
+            time.sleep(bekleme)
+
+    ikinci = set(metinler[1].splitlines())
+    kararli = [s for s in metinler[0].splitlines() if s in ikinci]
+
+    atilan = len(metinler[0].splitlines()) - len(kararli)
+    if atilan > 0:
+        print(f"  {atilan} dinamik satır elendi")
+
+    return "\n".join(kararli)
 
 
 # ── Snapshot yönetimi ────────────────────────────────────────────────────────
