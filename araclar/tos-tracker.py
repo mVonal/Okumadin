@@ -11,48 +11,58 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+BOT_VERSIYON = "2.1"
+
 # ── Takip edilen belgeler ────────────────────────────────────────────────────
+# "kontrol": belgede kesinlikle geçmesi gereken ifade.
+# Bulunamazsa sayfa doğru yüklenmemiş demektir; snapshot alınmaz.
 
 PLATFORMS = [
     {"id": "whatsapp-tos", "platform": "WhatsApp", "belge": "Hizmet Şartları",
      "url": "https://www.whatsapp.com/legal/terms-of-service",
-     "kontrol": "Limitation of Liability"},
+     "kontrol": "Hizmet Koşulları"},
+
     {"id": "whatsapp-privacy", "platform": "WhatsApp", "belge": "Gizlilik Politikası",
      "url": "https://www.whatsapp.com/legal/privacy-policy",
      "kontrol": "Topladığımız Bilgiler"},
+
     {"id": "whatsapp-cookies", "platform": "WhatsApp", "belge": "Çerez Politikası",
      "url": "https://www.whatsapp.com/legal/cookies",
-     "kontrol": "cookie"},
-    {"id": "bip-gizlilik", "platform": "BiP", "belge": "Aydınlatma Metni",
-     "url": "https://bip.com/tr/gizlilik-politikasi/",
-     "kontrol": "kişisel veri"},
+     "kontrol": "çerez"},
+
     {"id": "bip-kullanim", "platform": "BiP", "belge": "Kullanım Koşulları",
      "url": "https://bip.com/tr/kullanim-kosullari/",
      "kontrol": "Turkcell"},
+
     {"id": "signal-legal", "platform": "Signal", "belge": "Hizmet Şartları ve Gizlilik",
      "url": "https://signal.org/legal/",
      "kontrol": "Signal"},
+
     {"id": "offsec-tos", "platform": "OffSec", "belge": "Terms and Conditions",
      "url": "https://offsec.com/legal-docs/",
      "kontrol": "OffSec"},
+
     {"id": "offsec-privacy", "platform": "OffSec", "belge": "Privacy Notice",
      "url": "https://www.offsec.com/legal/privacy-policy/",
      "kontrol": "privacy"},
 ]
+
+# JavaScript ile yüklendiği için takip edilemeyenler (bkz. TAKIP-DURUMU.md):
+#   BiP Aydınlatma Metni, Trendyol Üyelik/KVKK/Çerez
+#   Playwright entegrasyonu sonrası eklenecek.
 
 HASHES_FILE = Path("araclar/hashes.json")
 SNAPSHOT_DIR = Path("araclar/snapshots")
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (compatible; OkumadinBot/2.1; "
+        f"Mozilla/5.0 (compatible; OkumadinBot/{BOT_VERSIYON}; "
         "+https://github.com/mVonal/Okumadin)"
     ),
     "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.5",
 }
 
 # ── OKM Taxonomy anahtar kelimeleri ──────────────────────────────────────────
-# Değişen metin bu kelimeleri içeriyorsa ilgili kategori tetiklenir.
 
 TAXONOMY_ANAHTARLARI = {
     "DATA_TRANSFER": ["yurt dışı", "aktarım", "transfer", "cross-border",
@@ -80,49 +90,38 @@ TAXONOMY_ANAHTARLARI = {
                         "resmi makam", "yetkili makam"],
 }
 
-# Anlamsız kabul edilen değişiklikler (yalnızca bunlar varsa issue açılmaz)
 GURULTU_KALIPLARI = [
-    r"^\s*$",                      # boş satır
-    r"^\d{1,2}[./]\d{1,2}[./]\d{4}$",  # yalnızca tarih
+    r"^\s*$",
+    r"^\d{1,2}[./]\d{1,2}[./]\d{4}$",
     r"^(copyright|©).*$",
-    r"^[\d\s.,:-]+$",              # yalnızca sayı ve noktalama
+    r"^[\d\s.,:-]+$",
 ]
 
-MIN_ANLAMLI_UZUNLUK = 40  # bu karakterden kısa değişiklikler gürültü sayılır
+MIN_ANLAMLI_UZUNLUK = 40
+MIN_SAYFA_UZUNLUK = 1000
 
 
-# ── Metin temizleme ──────────────────────────────────────────────────────────
+# ── Metin temizleme ve çekme ─────────────────────────────────────────────────
 
 def temizle_metin(html: str) -> str:
     """HTML'den dinamik ve anlamsız içeriği ayıklayıp saf metin döner."""
     soup = BeautifulSoup(html, "html.parser")
 
-    # Dinamik içerik üreten etiketleri tamamen kaldır
     for etiket in soup(["script", "style", "noscript", "iframe",
                         "svg", "meta", "link"]):
         etiket.decompose()
 
-    metin = soup.get_text(separator="\n")
-
-    # Satır bazında normalize et
     satirlar = []
-    for satir in metin.splitlines():
-        satir = satir.strip()
-        satir = re.sub(r"\s+", " ", satir)
+    for satir in soup.get_text(separator="\n").splitlines():
+        satir = re.sub(r"\s+", " ", satir.strip())
         if satir:
             satirlar.append(satir)
 
     return "\n".join(satirlar)
 
 
-def sha256(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
-
-
-# ── Ağdan çekme ──────────────────────────────────────────────────────────────
-
 def sayfa_cek(url: str, bekleme: float = 3.0) -> str | None:
-    """Sayfayı iki kez çeker ve yalnızca her iki çekimde de bulunan
+    """Sayfayı iki kez çeker, yalnızca her iki çekimde de bulunan
     satırları döner. Dönen banner, reklam, zaman damgası gibi dinamik
     içerik böylece elenir — siteye özel kural gerekmez."""
     metinler = []
@@ -148,6 +147,10 @@ def sayfa_cek(url: str, bekleme: float = 3.0) -> str | None:
     return "\n".join(kararli)
 
 
+def sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 # ── Snapshot yönetimi ────────────────────────────────────────────────────────
 
 def snapshot_oku(pid: str) -> str | None:
@@ -163,25 +166,20 @@ def snapshot_yaz(pid: str, metin: str) -> None:
 # ── Diff ve sınıflandırma ────────────────────────────────────────────────────
 
 def gurultu_mu(satir: str) -> bool:
-    """Bu satır anlamsız bir değişiklik mi?"""
-    icerik = satir[1:].strip()  # baştaki +/- işaretini at
+    icerik = satir[1:].strip()
     if len(icerik) < MIN_ANLAMLI_UZUNLUK:
         return True
-    for kalip in GURULTU_KALIPLARI:
-        if re.match(kalip, icerik, re.IGNORECASE):
-            return True
-    return False
+    return any(re.match(k, icerik, re.IGNORECASE) for k in GURULTU_KALIPLARI)
 
 
 def diff_cikar(eski: str, yeni: str) -> tuple[list[str], list[str]]:
-    """Anlamlı eklenen ve silinen satırları döner."""
     diff = difflib.unified_diff(
         eski.splitlines(), yeni.splitlines(), lineterm="", n=0
     )
 
     eklenen, silinen = [], []
     for satir in diff:
-        if satir.startswith("+++") or satir.startswith("---"):
+        if satir.startswith(("+++", "---")):
             continue
         if satir.startswith("+") and not gurultu_mu(satir):
             eklenen.append(satir[1:].strip())
@@ -192,19 +190,14 @@ def diff_cikar(eski: str, yeni: str) -> tuple[list[str], list[str]]:
 
 
 def taxonomy_eslestir(satirlar: list[str]) -> list[str]:
-    """Değişen metnin hangi OKM kategorilerini ilgilendirdiğini bulur."""
     birlesik = " ".join(satirlar).lower()
-    eslesenler = []
-    for kategori, anahtarlar in TAXONOMY_ANAHTARLARI.items():
-        if any(a.lower() in birlesik for a in anahtarlar):
-            eslesenler.append(kategori)
-    return eslesenler
+    return [k for k, anahtarlar in TAXONOMY_ANAHTARLARI.items()
+            if any(a.lower() in birlesik for a in anahtarlar)]
 
 
 # ── GitHub issue yönetimi ────────────────────────────────────────────────────
 
 def acik_issue_var_mi(baslik: str) -> bool:
-    """Aynı başlıkta açık bir issue zaten var mı?"""
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
@@ -215,7 +208,8 @@ def acik_issue_var_mi(baslik: str) -> bool:
             f"https://api.github.com/repos/{repo}/issues",
             headers={"Authorization": f"Bearer {token}",
                      "Accept": "application/vnd.github+json"},
-            params={"state": "open", "labels": "tos-degisikligi", "per_page": 100},
+            params={"state": "open", "labels": "tos-degisikligi",
+                    "per_page": 100},
             timeout=15,
         )
         if resp.status_code != 200:
@@ -241,7 +235,7 @@ def issue_ac(platform: dict, eklenen: list[str], silinen: list[str],
 
     tarih = datetime.now(timezone.utc).strftime("%d.%m.%Y")
 
-    def blok(baslik_metni: str, satirlar: list[str], limit: int = 15) -> str:
+    def blok(ust_baslik: str, satirlar: list[str], limit: int = 15) -> str:
         if not satirlar:
             return ""
         gosterilecek = satirlar[:limit]
@@ -249,12 +243,11 @@ def issue_ac(platform: dict, eklenen: list[str], silinen: list[str],
         icerik = "\n".join(f"- {s}" for s in gosterilecek)
         if fazla > 0:
             icerik += f"\n- _(+{fazla} satır daha)_"
-        return f"### {baslik_metni}\n{icerik}\n\n"
+        return f"### {ust_baslik}\n{icerik}\n\n"
 
-    kategori_metni = (
-        ", ".join(f"`{k}`" for k in kategoriler) if kategoriler
-        else "_Taxonomy eşleşmesi yok — genel değişiklik_"
-    )
+    kategori_metni = (", ".join(f"`{k}`" for k in kategoriler)
+                      if kategoriler
+                      else "_Taxonomy eşleşmesi yok — genel değişiklik_")
 
     govde = (
         f"**Platform:** {platform['platform']}\n"
@@ -274,7 +267,7 @@ def issue_ac(platform: dict, eklenen: list[str], silinen: list[str],
         f"- [ ] Yayın geçidini uygula\n"
         f"- [ ] İçerik üretimi planla (değişiklik haberi)\n\n"
         f"---\n"
-        f"*Okumadın ToS takip botu tarafından otomatik açıldı. "
+        f"*Okumadın ToS takip botu v{BOT_VERSIYON} tarafından otomatik açıldı. "
         f"Karar insana aittir (Anayasa m.7).*"
     )
 
@@ -282,8 +275,7 @@ def issue_ac(platform: dict, eklenen: list[str], silinen: list[str],
         f"https://api.github.com/repos/{repo}/issues",
         headers={"Authorization": f"Bearer {token}",
                  "Accept": "application/vnd.github+json"},
-        json={"title": baslik, "body": govde,
-              "labels": ["tos-degisikligi"]},
+        json={"title": baslik, "body": govde, "labels": ["tos-degisikligi"]},
         timeout=15,
     )
 
@@ -310,32 +302,36 @@ def hashes_yaz(veri: dict) -> None:
 
 def main() -> None:
     zaman = datetime.now(timezone.utc)
-    print(f"Okumadın ToS Takip Botu v2.0 — {zaman.isoformat()}\n")
+    print(f"Okumadın ToS Takip Botu v{BOT_VERSIYON} — {zaman.isoformat()}\n")
 
     hashes = hashes_oku()
-    anlamli_degisiklik = 0
-    gurultu_degisiklik = 0
+    anlamli = 0
+    gurultu = 0
+    atlanan = 0
 
     for platform in PLATFORMS:
         pid = platform["id"]
         print(f"{platform['platform']} / {platform['belge']}")
 
         yeni_metin = sayfa_cek(platform["url"])
+
         if yeni_metin is None:
-            print("  Atlandı\n")
+            print("  Atlandı (erişim hatası)\n")
+            atlanan += 1
             continue
 
-        # Doğrulama: beklenen içerik gerçekten geldi mi?
         kontrol = platform.get("kontrol")
         if kontrol and kontrol.lower() not in yeni_metin.lower():
             print(f"  UYARI: Beklenen içerik bulunamadı ('{kontrol}')")
             print("  Muhtemelen JavaScript ile yükleniyor — snapshot alınmadı\n")
+            atlanan += 1
             continue
 
-        if len(yeni_metin) < 1000:
+        if len(yeni_metin) < MIN_SAYFA_UZUNLUK:
             print(f"  UYARI: İçerik şüpheli kısa ({len(yeni_metin)} karakter)")
             print("  Snapshot alınmadı\n")
-            continue        
+            atlanan += 1
+            continue
 
         yeni_hash = sha256(yeni_metin)
         eski_hash = hashes.get(pid, {}).get("hash")
@@ -350,15 +346,14 @@ def main() -> None:
 
             if not eklenen and not silinen:
                 print("  Değişiklik var ama anlamsız (gürültü) — issue açılmadı")
-                gurultu_degisiklik += 1
+                gurultu += 1
             else:
                 kategoriler = taxonomy_eslestir(eklenen + silinen)
-                print(f"  ANLAMLI DEĞİŞİKLİK: "
-                      f"+{len(eklenen)} / -{len(silinen)} satır")
+                print(f"  ANLAMLI DEĞİŞİKLİK: +{len(eklenen)} / -{len(silinen)} satır")
                 if kategoriler:
                     print(f"  Kategoriler: {', '.join(kategoriler)}")
                 issue_ac(platform, eklenen, silinen, kategoriler)
-                anlamli_degisiklik += 1
+                anlamli += 1
 
             snapshot_yaz(pid, yeni_metin)
 
@@ -375,8 +370,8 @@ def main() -> None:
         print()
 
     hashes_yaz(hashes)
-    print(f"Tamamlandı. Anlamlı: {anlamli_degisiklik} · "
-          f"Gürültü (yok sayıldı): {gurultu_degisiklik}")
+    print(f"Tamamlandı. Anlamlı: {anlamli} · Gürültü: {gurultu} · "
+          f"Atlanan: {atlanan}")
 
 
 if __name__ == "__main__":
