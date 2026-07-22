@@ -306,6 +306,18 @@ def main() -> None:
             print("  Atlandı\n")
             continue
 
+        # Doğrulama: beklenen içerik gerçekten geldi mi?
+        kontrol = platform.get("kontrol")
+        if kontrol and kontrol.lower() not in yeni_metin.lower():
+            print(f"  UYARI: Beklenen içerik bulunamadı ('{kontrol}')")
+            print("  Muhtemelen JavaScript ile yükleniyor — snapshot alınmadı\n")
+            continue
+
+        if len(yeni_metin) < 1000:
+            print(f"  UYARI: İçerik şüpheli kısa ({len(yeni_metin)} karakter)")
+            print("  Snapshot alınmadı\n")
+            continue        
+
         yeni_hash = sha256(yeni_metin)
         eski_hash = hashes.get(pid, {}).get("hash")
         eski_metin = snapshot_oku(pid)
