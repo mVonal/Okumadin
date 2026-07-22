@@ -8,7 +8,7 @@
 > güncellenir.
 
 **Versiyon:** 1.0
-**Dondurulma tarihi:** [bugünün tarihi]
+**Dondurulma tarihi:** [22.07.2026]
 **Durum:** Yürürlükte
 
 ---
