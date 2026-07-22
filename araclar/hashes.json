@@ -3,49 +3,77 @@
     "platform": "WhatsApp",
     "belge": "Hizmet Şartları",
     "url": "https://www.whatsapp.com/legal/terms-of-service",
-    "hash": "72650737eb843b4d35328b2813b91fa76d4abdfedc48b366d2947c8138f147dd",
-    "son_kontrol": "2026-04-27T11:01:41.397560+00:00"
+    "hash": "35ce5f6008cf464dcd1bd5713b7058c003ce259dff9d4c8335025c8bb73ff078",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "whatsapp-privacy": {
     "platform": "WhatsApp",
     "belge": "Gizlilik Politikası",
     "url": "https://www.whatsapp.com/legal/privacy-policy",
-    "hash": "1ec6ea814edfe6dacc252666c41b5062c6f737df95d5f6e1f6e69463f6d8ef8e",
-    "son_kontrol": "2026-04-27T11:01:41.904566+00:00"
+    "hash": "c851630296eee927dfa106aee55706ec59808471e007968d2ba52ba43d505fe5",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "whatsapp-cookies": {
     "platform": "WhatsApp",
     "belge": "Çerez Politikası",
     "url": "https://www.whatsapp.com/legal/cookies",
-    "hash": "35d8c4d5506c099152fc724b301a2bb34e62f0f36d176f5f891eedc81b7cc65c",
-    "son_kontrol": "2026-04-27T11:01:42.365189+00:00"
+    "hash": "9615f629d65250d6b65ae97f4a7052ab3f8a9f7cc4b0f7d1450a8677e88b8dfc",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "bip-gizlilik": {
     "platform": "BiP",
     "belge": "Aydınlatma Metni",
     "url": "https://bip.com/tr/gizlilik-politikasi/",
-    "hash": "0d43ea90c3d379aa6eaa9aba76e0682fc860cd6230b76bb431cc688b207569e3",
-    "son_kontrol": "2026-04-27T11:01:43.143063+00:00"
+    "hash": "3e5bc5d0cc7831939f11560113b410d3f4ca90b87931ef6fb997402a38fe5fb9",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "bip-kullanim": {
     "platform": "BiP",
     "belge": "Kullanım Koşulları",
     "url": "https://bip.com/tr/kullanim-kosullari/",
-    "hash": "6f10d12facc9f3168ee6b3744e63e04163edbdfd5a061dc3ca4c55176e6f2158",
-    "son_kontrol": "2026-04-27T11:01:43.913246+00:00"
+    "hash": "79d1760ea2c14c2d7ff639fc0225e8635977511894abd24708fa3fc24fe65a0b",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "signal-legal": {
     "platform": "Signal",
-    "belge": "Hizmet Şartları ve Gizlilik Politikası",
+    "belge": "Hizmet Şartları ve Gizlilik",
     "url": "https://signal.org/legal/",
-    "hash": "1824bb627944ee495c5081207fe547e568fa2d21d778fe9b1ccc836d40c9231e",
-    "son_kontrol": "2026-04-27T11:01:44.023907+00:00"
+    "hash": "8de5750380a442bd71a66ce713a3b78ca32b967a7240f5ce5a6acebaac599aab",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   },
   "trendyol-kvkk": {
     "platform": "Trendyol",
     "belge": "Aydınlatma Metni",
     "url": "https://www.trendyol.com/kisisel_verilerin_korunmasi",
-    "hash": "6ce33c1bc8ff138a8cc3b7fde8ee2009f7dfbfed4f09aa8a25a6ff264a49dcf0",
-    "son_kontrol": "2026-04-27T11:01:45.049465+00:00"
+    "hash": "ead278431f2125720f2deb82d8af4d287dbd8820fb20cd0c0fb8529ec779bcbf",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
+  },
+  "trendyol-uyelik": {
+    "platform": "Trendyol",
+    "belge": "Üyelik Sözleşmesi",
+    "url": "https://www.trendyol.com/s/alici-uyelik-sozlesmesi",
+    "hash": "ac41d75d2c1b3caee6a286f454a3af17f18afe1968bafd59e20d96eee1fa779f",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
+  },
+  "trendyol-cerez": {
+    "platform": "Trendyol",
+    "belge": "Çerez Politikası",
+    "url": "https://www.trendyol.com/cerez_politikasi",
+    "hash": "f577fc83cef021060f0466977b0d0dcb8b8769471df5b29a543fae06d11d3ae6",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
+  },
+  "offsec-tos": {
+    "platform": "OffSec",
+    "belge": "Terms and Conditions",
+    "url": "https://offsec.com/legal-docs/",
+    "hash": "d6d6d89391be82d07ec577e3d852830716a5c96d66e9f14ff0c5f4b95261f5fb",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
+  },
+  "offsec-privacy": {
+    "platform": "OffSec",
+    "belge": "Privacy Notice",
+    "url": "https://www.offsec.com/legal/privacy-policy/",
+    "hash": "6b69da9e0deda3c92ad37311def9c3fe2e8abb8bb65f0893b7d1420fd2e15079",
+    "son_kontrol": "2026-07-22T07:02:44.325572+00:00"
   }
 }
