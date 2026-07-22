@@ -10,8 +10,8 @@
     "platform": "WhatsApp",
     "belge": "Gizlilik Politikası",
     "url": "https://www.whatsapp.com/legal/privacy-policy",
-    "hash": "3cc9f74b699aa290e23cd62bafa5ca24696cf56658a33a5eed866e903c3e2f0c",
-    "son_kontrol": "2026-07-22T07:03:56.329530+00:00"
+    "hash": "b1eede8a4b6579079bbdda922f7a615cbe2f87aa1751e24e2989f04335be22ba",
+    "son_kontrol": "2026-07-22T07:30:14.013769+00:00"
   },
   "whatsapp-cookies": {
     "platform": "WhatsApp",
@@ -32,14 +32,14 @@
     "belge": "Kullanım Koşulları",
     "url": "https://bip.com/tr/kullanim-kosullari/",
     "hash": "79d1760ea2c14c2d7ff639fc0225e8635977511894abd24708fa3fc24fe65a0b",
-    "son_kontrol": "2026-07-22T07:25:53.997237+00:00"
+    "son_kontrol": "2026-07-22T07:30:14.013769+00:00"
   },
   "signal-legal": {
     "platform": "Signal",
     "belge": "Hizmet Şartları ve Gizlilik",
     "url": "https://signal.org/legal/",
     "hash": "8de5750380a442bd71a66ce713a3b78ca32b967a7240f5ce5a6acebaac599aab",
-    "son_kontrol": "2026-07-22T07:25:53.997237+00:00"
+    "son_kontrol": "2026-07-22T07:30:14.013769+00:00"
   },
   "trendyol-kvkk": {
     "platform": "Trendyol",
@@ -67,13 +67,13 @@
     "belge": "Terms and Conditions",
     "url": "https://offsec.com/legal-docs/",
     "hash": "d6d6d89391be82d07ec577e3d852830716a5c96d66e9f14ff0c5f4b95261f5fb",
-    "son_kontrol": "2026-07-22T07:25:53.997237+00:00"
+    "son_kontrol": "2026-07-22T07:30:14.013769+00:00"
   },
   "offsec-privacy": {
     "platform": "OffSec",
     "belge": "Privacy Notice",
     "url": "https://www.offsec.com/legal/privacy-policy/",
     "hash": "6b69da9e0deda3c92ad37311def9c3fe2e8abb8bb65f0893b7d1420fd2e15079",
-    "son_kontrol": "2026-07-22T07:25:53.997237+00:00"
+    "son_kontrol": "2026-07-22T07:30:14.013769+00:00"
   }
 }
