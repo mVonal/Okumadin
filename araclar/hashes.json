@@ -4,21 +4,21 @@
     "belge": "Hizmet Şartları",
     "url": "https://www.whatsapp.com/legal/terms-of-service",
     "hash": "bbc0c5a130d8a2e67596a136feb1a67179bb3ced4ff90cf80338979cfc312e9c",
-    "son_kontrol": "2026-08-03T12:19:42.559410+00:00"
+    "son_kontrol": "2026-08-10T10:13:49.348263+00:00"
   },
   "whatsapp-privacy": {
     "platform": "WhatsApp",
     "belge": "Gizlilik Politikası",
     "url": "https://www.whatsapp.com/legal/privacy-policy",
     "hash": "4aa2975722f0a9074dad0d39ff26a5ee19ad3d1d434f93f2db1895bfab84da4d",
-    "son_kontrol": "2026-08-03T12:19:42.559410+00:00"
+    "son_kontrol": "2026-08-10T10:13:49.348263+00:00"
   },
   "whatsapp-cookies": {
     "platform": "WhatsApp",
     "belge": "Çerez Politikası",
     "url": "https://www.whatsapp.com/legal/cookies",
     "hash": "5ed79215cc35540989dc3a5ed2ac30e0e09a65c813fbbb03d9c8fdfee1483aae",
-    "son_kontrol": "2026-08-03T12:19:42.559410+00:00"
+    "son_kontrol": "2026-08-10T10:13:49.348263+00:00"
   },
   "bip-gizlilik": {
     "platform": "BiP",
@@ -32,14 +32,14 @@
     "belge": "Kullanım Koşulları",
     "url": "https://bip.com/tr/kullanim-kosullari/",
     "hash": "79d1760ea2c14c2d7ff639fc0225e8635977511894abd24708fa3fc24fe65a0b",
-    "son_kontrol": "2026-08-03T12:19:42.559410+00:00"
+    "son_kontrol": "2026-08-10T10:13:49.348263+00:00"
   },
   "signal-legal": {
     "platform": "Signal",
     "belge": "Hizmet Şartları ve Gizlilik",
     "url": "https://signal.org/legal/",
     "hash": "8de5750380a442bd71a66ce713a3b78ca32b967a7240f5ce5a6acebaac599aab",
-    "son_kontrol": "2026-08-03T12:19:42.559410+00:00"
+    "son_kontrol": "2026-08-10T10:13:49.348263+00:00"
   },
   "trendyol-kvkk": {
     "platform": "Trendyol",
