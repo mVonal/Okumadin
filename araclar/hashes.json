@@ -4,21 +4,21 @@
     "belge": "Hizmet Şartları",
     "url": "https://www.whatsapp.com/legal/terms-of-service",
     "hash": "5320ddb4ed7809e97c7b539a98c0f15903333cfe5a5e20badbe1866047beec5b",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "whatsapp-privacy": {
     "platform": "WhatsApp",
     "belge": "Gizlilik Politikası",
     "url": "https://www.whatsapp.com/legal/privacy-policy",
     "hash": "6f24427e455852305473fafed1b31649aee4b1c41b23551224a8253db630b979",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "whatsapp-cookies": {
     "platform": "WhatsApp",
     "belge": "Çerez Politikası",
     "url": "https://www.whatsapp.com/legal/cookies",
     "hash": "0e213081fd4a129f7c2ee52b2ab707ee8a8e323be054e7e982d65f315462a9e5",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "bip-gizlilik": {
     "platform": "BiP",
@@ -32,14 +32,14 @@
     "belge": "Kullanım Koşulları",
     "url": "https://bip.com/tr/kullanim-kosullari/",
     "hash": "79d1760ea2c14c2d7ff639fc0225e8635977511894abd24708fa3fc24fe65a0b",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "signal-legal": {
     "platform": "Signal",
     "belge": "Hizmet Şartları ve Gizlilik",
     "url": "https://signal.org/legal/",
     "hash": "8de5750380a442bd71a66ce713a3b78ca32b967a7240f5ce5a6acebaac599aab",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "trendyol-kvkk": {
     "platform": "Trendyol",
@@ -66,14 +66,14 @@
     "platform": "OffSec",
     "belge": "Terms and Conditions",
     "url": "https://offsec.com/legal-docs/",
-    "hash": "aadaa0efbcd6accbe602e9c2cce17e7e99a80c8702415cb3618a0e6fc84e71a0",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "hash": "dcb64ec53d520cd12497f4dafa53c2e2cbee2773baf5cb59b1274d85b4d8b8ce",
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   },
   "offsec-privacy": {
     "platform": "OffSec",
     "belge": "Privacy Notice",
     "url": "https://www.offsec.com/legal/privacy-policy/",
-    "hash": "4d716a3e9ad7f8e02656a5ed1666b05fd96c4dcc6e77808ea9615b7ef57cc33e",
-    "son_kontrol": "2026-09-21T15:38:19.279765+00:00"
+    "hash": "5b9c4fe7007ff5c05840e59b3fdb3fbd70fcf08276c6964f9ff4c8aa98f10e8f",
+    "son_kontrol": "2026-09-28T17:19:25.061761+00:00"
   }
 }

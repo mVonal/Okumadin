@@ -245,6 +245,7 @@ Bug Bounty Program
 Learner Stories
 Resources
 Blog
+In-Person Events
 Webinars
 OffSec Partner Training
 Cyberversity
