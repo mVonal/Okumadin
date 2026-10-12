@@ -1,19 +1,20 @@
 Gizlilik İlkesi
-İndir
 Özellikler
-Arama
-Mesajlaşma
-Gruplar
-Kanallar
+Calling
+Messaging
+Groups
+Channels
 Meta AI
-Durum
-Güvenlik
-Gizlilik
+Status
+Security
+Parental controls
+Privacy
 Blog
-Uygulamalar
-Yardım Merkezi
+Apps
+Help Center
 İşletmeler İçin
-Giriş Yap
+Log In
+Download
 İndir
 WhatsApp Gizlilik İlkesi
 Geçerlilik tarihi: 4 Ocak 2021
