@@ -314,19 +314,17 @@ Koşullar ve Gizlilik İlkesi
 Site haritası
 Türkçe
 Bir bölge seç
-Tüm diller (30)
+Tüm diller (27)
 Afrika ve Orta Doğu (3)
 Kuzey ve Güney Amerika (4)
-Asya-Pasifik (20)
+Asya-Pasifik (19)
 Doğu Avrupa (1)
-Batı Avrupa (5)
+Batı Avrupa (3)
 Bahasa Indonesia
-Deutsch
 English
 español
 Filipino
 français
-italiano
 Oriya
 Português (Brasil)
 Türkçe
@@ -348,5 +346,4 @@ Türkçe
 ไทย
 한국어
 日本語
-简体中文
 繁體中文（香港）
